@@ -31,6 +31,13 @@ Function Install-PSReadLine {
     Install-Module PSReadLine -AllowPrerelease -Force
 }
 
+Function Install-z {
+    [CmdletBinding()]
+    param()
+
+    Install-Module z
+}
+
 Function Install-NerdFonts {
 
     BEGIN {
@@ -88,3 +95,4 @@ Install-NerdFonts
 Install-OhMyPosh
 Install-TerminalIcons
 Install-PSReadline
+Install-z

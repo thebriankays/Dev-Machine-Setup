@@ -9,7 +9,7 @@ if ($host.Name -eq 'ConsoleHost')
 Import-Module -Name Terminal-Icons
 Import-Module z
 
-oh-my-posh --init --shell pwsh --config "c:\Dev\TerminalConfiguration.json" | Invoke-Expression
+oh-my-posh --init --shell pwsh --config "https://raw.githubusercontent.com/thebriankays/Dev-Machine-Setup/master/TerminalConfiguration.json" | Invoke-Expression
 
 
 Register-ArgumentCompleter -Native -CommandName winget -ScriptBlock {
